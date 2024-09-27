@@ -24,7 +24,7 @@ const checkWin = (flag) => {
     } win the game`;
     arr = [flag, flag, flag, flag, flag, flag, flag, flag, flag];
   } else if (totalTwos == 0) {
-    document.querySelector(".title").innerHTML = "ITs a tie";
+    document.querySelector(".title").innerHTML = "It's a tie";
   }
   return wins;
 };
