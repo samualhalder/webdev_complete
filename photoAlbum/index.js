@@ -10,13 +10,9 @@ images.forEach((photo) => {
   select.appendChild(option);
 });
 
-select.addEventListener("change", () => {
-  console.log("event");
+const photo = document.querySelector(".img");
+photo.src = images[0].url;
 
-  const photo = document.createElement("img");
-  photo.style.cssText = "border:2px solid black;back-ground:blur";
+document.querySelector(".show").addEventListener("click", () => {
   photo.src = select.value;
-  console.log(photoShow);
-  if (photoShow.lastChild) photoShow.removeChild(photoShow.lastChild);
-  photoShow.appendChild(photo);
 });
